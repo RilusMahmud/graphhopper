@@ -105,39 +105,39 @@ public class CarFlagEncoder extends AbstractFlagEncoder {
         badSurfaceSpeedMap.add("compacted");
 
         // autobahn
-        defaultSpeedMap.put("motorway", 100);
-        defaultSpeedMap.put("motorway_link", 70);
-        defaultSpeedMap.put("motorroad", 90);
+        defaultSpeedMap.put("motorway", 10);
+        defaultSpeedMap.put("motorway_link", 10);
+        defaultSpeedMap.put("motorroad", 10);
         // bundesstraße
-        defaultSpeedMap.put("trunk", 70);
-        defaultSpeedMap.put("trunk_link", 65);
+        defaultSpeedMap.put("trunk", 30);
+        defaultSpeedMap.put("trunk_link", 30);
         // linking bigger town
-        defaultSpeedMap.put("primary", 65);
-        defaultSpeedMap.put("primary_link", 60);
+        defaultSpeedMap.put("primary", 10);
+        defaultSpeedMap.put("primary_link", 10);
         // linking towns + villages
-        defaultSpeedMap.put("secondary", 60);
-        defaultSpeedMap.put("secondary_link", 50);
+        defaultSpeedMap.put("secondary", 10);
+        defaultSpeedMap.put("secondary_link", 10);
         // streets without middle line separation
-        defaultSpeedMap.put("tertiary", 50);
-        defaultSpeedMap.put("tertiary_link", 40);
-        defaultSpeedMap.put("unclassified", 30);
-        defaultSpeedMap.put("residential", 30);
+        defaultSpeedMap.put("tertiary", 10);
+        defaultSpeedMap.put("tertiary_link", 10);
+        defaultSpeedMap.put("unclassified", 10);
+        defaultSpeedMap.put("residential", 10);
         // spielstraße
         defaultSpeedMap.put("living_street", 5);
-        defaultSpeedMap.put("service", 20);
+        defaultSpeedMap.put("service", 5);
         // unknown road
-        defaultSpeedMap.put("road", 20);
+        defaultSpeedMap.put("road", 5);
         // forestry stuff
-        defaultSpeedMap.put("track", 15);
+        defaultSpeedMap.put("track", 5);
 
-        trackTypeSpeedMap.put("grade1", 20); // paved
-        trackTypeSpeedMap.put("grade2", 15); // now unpaved - gravel mixed with ...
+        trackTypeSpeedMap.put("grade1", 10); // paved
+        trackTypeSpeedMap.put("grade2", 10); // now unpaved - gravel mixed with ...
         trackTypeSpeedMap.put("grade3", 10); // ... hard and soft materials
         trackTypeSpeedMap.put(null, defaultSpeedMap.get("track"));
 
         // limit speed on bad surfaces to 30 km/h
-        badSurfaceSpeed = 30;
-        maxPossibleSpeed = 140;
+        badSurfaceSpeed = 10;
+        maxPossibleSpeed = 50;
         speedDefault = defaultSpeedMap.get("secondary");
     }
 
