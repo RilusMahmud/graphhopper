@@ -109,8 +109,8 @@ public class CarFlagEncoder extends AbstractFlagEncoder {
         defaultSpeedMap.put("motorway_link", 10);
         defaultSpeedMap.put("motorroad", 10);
         // bundesstraße
-        defaultSpeedMap.put("trunk", 30);
-        defaultSpeedMap.put("trunk_link", 30);
+        defaultSpeedMap.put("trunk", 20);
+        defaultSpeedMap.put("trunk_link", 20);
         // linking bigger town
         defaultSpeedMap.put("primary", 10);
         defaultSpeedMap.put("primary_link", 10);
